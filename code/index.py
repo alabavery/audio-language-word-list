@@ -52,6 +52,6 @@ if __name__ == '__main__':
     save_target_path = sys.argv[1]
     print("Language: {lang}; target_dir: {target_dir}".format(lang=language, target_dir=save_target_path), flush=True)
     
-    wlg = WordListGetter(c, os.path.join(save_target_path, language))
+    wlg = WordListGetter(c, save_target_path)
     wlg.save()
     print("Successfully saved word list!")
